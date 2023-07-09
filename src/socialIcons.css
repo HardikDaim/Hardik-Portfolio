@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Social Button */
+.social-btn {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-250px, 0);
+  }
+  .social-btn a {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.837);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: right;
+    border-radius: 50px;
+    transition: 1s;
+    transition-property: transform ;
+  }
+  .social-btn a:hover {
+    transform: translate(140px,0);
+    
+  }
+  .social-btn i {
+    margin-left: 10px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .social-btn a:nth-child(1) i {
+    color: white;
+  }
+  .social-btn a:nth-child(2) i {
+    color: #1DA0F0;
+  }
+  .social-btn a:nth-child(3) i {
+    color: transparent;
+    background-image: linear-gradient(45deg ,#FFDF9E, #E56969, #8A49A1);
+    -webkit-background-clip: text;
+    font-weight: 600;
+  }
+
+  
