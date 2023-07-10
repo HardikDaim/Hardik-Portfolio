@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../education.css";
@@ -12,6 +12,9 @@ import FourthAnimation from "../animations/anim-8.json";
 import FifthAnimation from "../animations/anim-9.json";
 
 export default function Education() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const options1 = {
     loop: true,
     autoplay: true,
@@ -200,7 +203,7 @@ export default function Education() {
 
               <div className="col-lg-12 text-center py-5">
                 <h2 className="service-heading relative text-4xl font-bold leading-none text-center uppercase m-auto">
-                  Certifiactions
+                  Certification
                 </h2>
               </div>
             </div>

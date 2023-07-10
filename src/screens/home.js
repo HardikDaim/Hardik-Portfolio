@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState,useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/navbar";
 import SocialIcons from "../components/socialIcons";
@@ -17,6 +17,9 @@ import anim4 from "../animations/game.json";
 import Typed from "typed.js";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const options1 = {
     loop: true,
     autoplay: true,
@@ -94,7 +97,7 @@ export default function Home() {
 
   const cv = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1kV-Z5TYNucWDIQ6JHYBH8ZDYK2IqOV4k/view?usp=share_link";
+      "https://drive.google.com/file/d/1Rd7ngDle_78ZvCJGf3l9Ox8-k7_K5lbs/view?usp=share_link"
   };
 
   return (
@@ -122,7 +125,7 @@ export default function Home() {
                   <h3 className="text-3xl font-bold tracking-tight text-gray-900 pb-2">
                     Hello<span className="hello ml-1.5">👋</span>
                   </h3>
-                  <h1 className="text-3xl font-bold tracking-tight text-gray-900 pb-2">
+                  <h1 className="text-2xl sm:text-3xl lg:text-3xl font-bold tracking-tight text-gray-900 pb-2">
                     My Name is Hardik Daim
                   </h1>
                   <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-2">
@@ -221,7 +224,7 @@ export default function Home() {
                       of experience using <b> DaVinci Resolve</b> for Video
                       Editing. I also know basic Photo Editing Skills and
                       Editing on <b>Canva &amp; PicsAr</b>t. You can Download my
-                      <b>Resume(CV)</b> to know more about me by clicking on the
+                      <b> Resume(CV)</b> to know more about me by clicking on the
                       button given below.
                     </p>
                     <div className="d-flex flow-row flex-wrap">
@@ -406,8 +409,8 @@ export default function Home() {
                         to="/project"
                         type="button"
                         className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center"
-                        id="half"
-                        onclick="window.location.href='projects.html';"
+                      
+                     
                       >
                         My Projects{" "}
                       </Link>

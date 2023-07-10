@@ -43,7 +43,9 @@ export default function Example() {
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
+                      <Link to="/">
                     <img src="Images/logo.png" alt="Hardik Logo" className="h-8 w-22" />
+                      </Link>
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">

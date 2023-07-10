@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -10,9 +11,9 @@ export default function Footer() {
             <div className="col-xl-4 col-sm-8 me-auto">
               <div className="widget footer-widget mb-5 mb-lg-0 pt-2">
                 <div className="footer-logo">
-                  <a href="http://127.0.0.1:5500/index.html">
+                  <Link to="/">
                     <img src="Images/logo.png" alt="Hardik Logo" className="h-20 w-200" />
-                  </a>
+                  </Link>
                 </div>
 
                 <p className="mt-4 text-white">
@@ -28,7 +29,7 @@ export default function Footer() {
                   <a href="https://www.linkedin.com/in/hardik-daim-ab0b07251/" target="_blank">
                     <i className="fa-brands fa-linkedin-in text-blue-500 mr-2"></i>
                   </a>
-                  <a href="https://www.instagram.com/hardikdaim_17/">
+                  <a href="https://www.instagram.com/hardikdaim_17/" target="_blank">
                     <i className="fa-brands fa-square-instagram text-blue-500 mr-2"></i>
                   </a>
                 </div>
@@ -41,17 +42,17 @@ export default function Footer() {
                 <h5 className="widget-title font-bold">Quick Links</h5>
                 <ul className="list-unstyled footer-item">
                   <li className="footer-item">
-                    <a className="nav-link" href="#">
-                      Download my Resume
+                    <a className="nav-link" href="https://drive.google.com/file/d/1Rd7ngDle_78ZvCJGf3l9Ox8-k7_K5lbs/view?usp=share_link">
+                      View my Resume
                     </a>
                   </li>
                   <li className="footer-item">
-                    <a className="nav-link" href="hire-me.html">
+                    <Link className="nav-link" to="/contact">
                       Hire Me
-                    </a>
+                    </Link>
                   </li>
                   <li className="footer-item">
-                    <a className="nav-link" href="contact.html">
+                    <a className="nav-link" href="/contact">
                       Contact Me
                     </a>
                   </li>
@@ -64,22 +65,20 @@ export default function Footer() {
                 <h5 className="widget-title font-bold">Navigation</h5>
                 <ul className="list-unstyled footer-item">
                   <li className="footer-item">
-                    <a className="nav-link" href="education.html">
-                      About Me
-                    </a>
+                    <Link className="nav-link" to="/">
+                      Dashboard
+                    </Link>
                   </li>
                   <li className="footer-item">
-                    <a className="nav-link" href="#">
-                      FAQ
-                    </a>
+                    <Link className="nav-link" to="/education">
+                      Education
+                    </Link>
                   </li>
                   <li className="footer-item">
-                    <a className="nav-link" href="#">
-                      Disclaimer
-                    </a>{' '}
-                    <a className="nav-link" href="#">
-                      Privacy
-                    </a>
+                    <Link className="nav-link" to="/project">
+                      Projects
+                    </Link>{' '}
+                   
                   </li>
                 </ul>
               </div>
@@ -100,7 +99,7 @@ export default function Footer() {
             <div className="col-xl-6 col-sm-12 col-lg-6">
               <div className="footer-btn-links text-start text-sm-center text-lg-center mb-2 font-bold text-white">
                 <p>
-                  Managed by <a className="btn-links text-blue-500" href="">Hardik Daim</a>
+                  Managed by <Link className="btn-links text-blue-500" to="">Hardik Daim</Link>
                 </p>
               </div>
             </div>

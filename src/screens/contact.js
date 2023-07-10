@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import SocialIcons from "../components/socialIcons";
@@ -8,6 +8,9 @@ function handleClick() {
 }
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [showHash, setShowHash] = useState(false);
 
   const handleMouseEnter = () => {
