@@ -1,4 +1,4 @@
-import React, { useState,useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/navbar";
 import SocialIcons from "../components/socialIcons";
@@ -17,6 +17,12 @@ import anim4 from "../animations/game.json";
 import Typed from "typed.js";
 
 export default function Home() {
+  const [showNotice, setShowNotice] = useState(true);
+
+  const handleCloseNotice = () => {
+    setShowNotice(false);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -97,18 +103,56 @@ export default function Home() {
 
   const cv = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1Rd7ngDle_78ZvCJGf3l9Ox8-k7_K5lbs/view?usp=share_link"
+      "https://drive.google.com/file/d/1Rd7ngDle_78ZvCJGf3l9Ox8-k7_K5lbs/view?usp=share_link";
   };
 
   return (
     <div>
-    
       <Navbar />
       <SocialIcons />
       <Contact />
       <>
+        {/* Notice */}
+        <div className="bg-gradient-to-r from-blue-600 to-purple-600">
+          {showNotice && (
+            <div className=" p-3 flex flex-col items-center sm:flex-row justify-between mx-auto max-w-7xl">
+              <p className="text-white text-sm sm:text-lg font-semibold lg:px-6 mb-2 sm:mb-0 text-center sm:text-left">
+                🚀 Exciting News: Our New{" "}
+                <strong>AI Assistant-CurioChat App </strong>is Here! 🤖{" "}
+                <span></span>
+              </p>
+              <div className="flex items-center justify-end space-x-2">
+                <a
+                  className="p-1 sm:px-2 text-xs sm:text-sm md:text-lg sm:mx-2 bg-[#fff] text-brand lg:text-lg font-rubik text-white bg-gray-800 font-semibold rounded-lg hover:bg-gray-700"
+                  target="_blank"
+                  href="https://curiochat.netlify.app"
+                >
+                  Try Now
+                </a>
+                <button onClick={handleCloseNotice} claaaName="ml-auto">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 sm:h-6 sm:w-6 text-white ml-auto hover:text-white-600 cursor-pointer"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Content */}
         <header className="bg-white shadow">
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  py-6">
             <h1
               className="text-3xl font-bold tracking-tight text-gray-900"
               onMouseEnter={handleMouseEnter}
@@ -119,7 +163,7 @@ export default function Home() {
             </h1>
           </div>
           <main>
-            <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-4 py-0 sm:px-6 lg:px-8">
               <div className="row">
                 <div className="col-lg-6 col-md-12">
                   <h3 className="text-3xl font-bold tracking-tight text-gray-900 pb-2">
@@ -212,22 +256,28 @@ export default function Home() {
 
                   <div className="paragraph py-4">
                     <p className=" pb-2 " id="int-text">
-                      I’m an 18 year old Student and living in Panipat, I’m also
-                      a First Year Computer Science student studying{" "}
-                      <b>B.Tech in Computer Science and Engineering</b> at CGC
+                      I am a 19-year-old student currently residing in Panipat.
+                      I am pursuing a Bachelor's degree in Computer Science and
+                      Engineering, and I am currently in my second year at CGC
                       Landran, Mohali.
                     </p>
-                    <p className=" pb-4" id="int-text">
-                      I've prior Experience of managing a YouTube Channel and
-                      edited over 400 videos for my own youtube channel(Not
-                      Exist now) and for other freelance clients and have plenty
-                      of experience using <b> DaVinci Resolve</b> for Video
-                      Editing. I also know basic Photo Editing Skills and
-                      Editing on <b>Canva &amp; PicsAr</b>t. You can Download my
-                      <b> Resume(CV)</b> to know more about me by clicking on the
-                      button given below.
+                    <p className=" pb-2" id="int-text">
+                      I am a <b>Software Engineer and a MERN Stack Developer</b>,
+                      consistently dedicated to expanding my skill set through
+                      continuous learning. I have prior experience managing a
+                      YouTube channel and have edited over 400 videos for both
+                      my own channel (which no longer exists) and freelance
+                      clients. I am highly proficient in video editing using
+                      DaVinci Resolve. Additionally, I possess basic photo
+                      editing skills and can work with tools such as Canva and
+                      PicsArt.
                     </p>
-                    <div className="d-flex flow-row flex-wrap">
+
+                    <p className=" pb-4">
+                      If you would like to learn more about me, you can <b>download
+                      my resume (CV)</b> by clicking on the button below.
+                    </p>
+                    <div className="d-flex flow-row flex-wrap justify-center lg:justify-start">
                       <button
                         type="button"
                         onClick={cv}
@@ -404,13 +454,11 @@ export default function Home() {
                       You can click on <b>My Projects</b> button to directly
                       hover to that page.
                     </p>
-                    <div className="d-flex flow-row flex-wrap text-center m-auto">
+                    <div className="d-flex flow-row flex-wrap justify-center lg:justify-start items-center text-center m-auto">
                       <Link
                         to="/project"
                         type="button"
                         className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center"
-                      
-                     
                       >
                         My Projects{" "}
                       </Link>
@@ -458,11 +506,11 @@ export default function Home() {
                       You can click on <b>My Education</b> button to directly
                       hover to that page.
                     </p>
-                    <div className="d-flex flow-row flex-wrap text-center m-auto">
+                    <div className="d-flex flow-row flex-wrap justify-center lg:justify-start text-center m-auto">
                       <Link
                         to="/education"
                         type="button"
-                        className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center"
+                        className="rounded-full inline-flex  rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center"
                         id="half"
                         onclick="window.location.href='projects.html';"
                       >

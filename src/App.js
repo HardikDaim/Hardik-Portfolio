@@ -10,6 +10,7 @@ import Education from "./screens/education"
 import Project from "./screens/projects"
 import Contact from "./screens/contact"
 
+
 function App() {
   return (
     <Router>

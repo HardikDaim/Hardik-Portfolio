@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../education.css";
@@ -113,7 +113,7 @@ export default function Education() {
                             subjects like DS, Algorithms, DBMS, OS, CA,CN etc.
                           </div>
                           <div className="box-item">
-                            <b>💥 CGPA</b>: 8.00/10 (1st Sem){" "}
+                            <b>💥 SGPA</b>: 8.00/10 (2nd Sem){" "}
                           </div>
                         </div>
                       </div>
@@ -169,38 +169,34 @@ export default function Education() {
                   Development, App Development, Software Development and in
                   Future I'll try Game Development as well.
                 </p>
-                <ul className="competitive_icon relative flex">
+                <ul className="competitive_icon relative flex justify-center">
                   <li className="inline ml-2">
                     <Lottie options={options2} height={100} />
                   </li>
-                  <li className="ml-5">
-                    <Lottie options={options3} height={100} />
-                  </li>
+                  
                 </ul>
 
                 <hr></hr>
                 <div className="coding" id="br">
                   <h1 className="yippee mt-5 text-3xl font-bold tracking-tight text-gray-900 pb-5 text-center">
-                    Learning data Structures & Algorithm
+                    Learning Data Structures & Algorithms
                   </h1>
                   <p id="time">
-                    Presently doing <b>Data Structures and Algorithm</b> in
-                    Java.
+                    Presently doing <b>Data Structures and Algorithm</b> in Java
+                    and C++.
                   </p>
-                  <ul className="competitive_icon flex">
+                  <ul className="competitive_icon flex justify-center">
                     <li className="inline ml-2">
                       <Lottie options={options4} height={100} />
                     </li>
-                    <li className="ml-5">
-                      <Lottie options={options5} height={100} />
-                    </li>
+                    
                   </ul>
                 </div>
               </div>
+
               <div className="col-lg-6 col-md-12 head-logo">
                 <Lottie options={options1} />
               </div>
-
               <div className="col-lg-12 text-center py-5">
                 <h2 className="service-heading relative text-4xl font-bold leading-none text-center uppercase m-auto">
                   Certification
@@ -209,20 +205,51 @@ export default function Education() {
             </div>
             <div className="certificate">
               <div className="row">
-                 {/* Card 3 */}
-              <div className="col-lg-4 col-md-6 col-sm-12 ">
-                  <div className="shadow hover:shadow-lg mb-8 lg:mb-4">
+                {/* Card 4 */}
+                <div className="col-lg-4 col-md-6 col-sm-12 ">
+                  <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
+                    <span class="absolute right-0 top-0 text-uppercase text-xs font-semibold bg-red-600 text-white py-1 px-4 bg-gradient-to-r from-red-500 via-purple-600 to-red-500 hover:bg-gradient-to-l rounded-none hover:from-red-500 hover:via-purple-600 hover:to-red-500 text-white py-2 px-4 rounded-md transition-all duration-300 ease-in-out ">
+                      Latest
+                    </span> 
                     <img
-                      src="Images/certificate-3.png" 
+                      src="Images/certificate-4.jpeg"
                       className="card-img-top"
                       alt="..."
-                      style={{"width":"870px", "height": "350px"}}
+                      style={{ width: "870px", height: "350px" }}
+                    />
+                    <div className="card-text">
+                      <h5 className="card-title text-center font-semibold font-serif">
+                        TCS iON Certificate "E-mail Etiquette"
+                      </h5>
+                      <p className="card-text p-2 text-gray-400 text-right ">
+                        -by TCS
+                      </p>
+                      <div className="flex justify-center p-3">
+                        <a
+                          target="_blank"
+                          href="https://drive.google.com/file/d/1_OLw3-mBjE6fsqQr_4adKpaugeBoyhuJ/view?usp=share_link"
+                          className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center "
+                        >
+                          View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Card 3 */}
+                <div className="col-lg-4 col-md-6 col-sm-12 ">
+                  <div className="shadow hover:shadow-lg mb-8 lg:mb-4">
+                    <img
+                      src="Images/certificate-3.png"
+                      className="card-img-top"
+                      alt="..."
+                      style={{ width: "870px", height: "350px" }}
                     />
                     <div className="card-text">
                       <h5 className="card-title text-center font-semibold font-serif">
                         MERN Stack Bootcamp 2023
                       </h5>
-                      <p className="card-text text-gray-400 text-right ">
+                      <p className="card-text p-2 text-gray-400 text-right ">
                         -by Udemy
                       </p>
                       <div className="flex justify-center p-3">
@@ -238,19 +265,19 @@ export default function Education() {
                   </div>
                 </div>
                 {/* Card 2 */}
-              <div className="col-lg-4 col-md-6 col-sm-12 ">
+                <div className="col-lg-4 col-md-6 col-sm-12 ">
                   <div className="shadow hover:shadow-lg mb-8 lg:mb-4">
                     <img
-                      src="Images/certificate-2.png" 
+                      src="Images/certificate-2.png"
                       className="card-img-top"
                       alt="..."
-                      style={{"width":"870px", "height": "350px"}}
+                      style={{ width: "870px", height: "350px" }}
                     />
                     <div className="card-text">
                       <h5 className="card-title text-center font-semibold font-serif">
                         AWS Virtual Experience Program
                       </h5>
-                      <p className="card-text text-gray-400 text-right ">
+                      <p className="card-text p-2 text-gray-400 text-right ">
                         -by AWS
                       </p>
                       <div className="flex justify-center p-3">
@@ -272,13 +299,13 @@ export default function Education() {
                       src="Images/java.jpg"
                       className="card-img-top"
                       alt="..."
-                      style={{"width":"870px", "height": "350px"}}
+                      style={{ width: "870px", height: "350px" }}
                     />
                     <div className="card-text">
                       <h5 className="card-title text-center font-semibold font-serif">
                         Java Programming- Beginners to Masters
                       </h5>
-                      <p className="card-text text-gray-400 text-right ">
+                      <p className="card-text p-2 text-gray-400 text-right ">
                         -by Udemy
                       </p>
                       <div className="flex justify-center p-3">

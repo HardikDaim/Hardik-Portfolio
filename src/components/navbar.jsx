@@ -1,37 +1,48 @@
-import React from 'react';
-import { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import React, {useState} from "react";
+import { Fragment } from "react";
+import { Link  } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 
 const user = {
-  name: 'Hardik Daim',
-  email: 'hardikdaim@gmail.com',
-  imageUrl: 'Images/hardik.jpg',
+  name: "Hardik Daim",
+  email: "hardikdaim@gmail.com",
+  imageUrl: "Images/hardik.jpg",
 };
 
-
-
 const userNavigation = [
-  { name: "Hardik's Profile", to: '/' },
-  { name: 'Settings', to: '' },
-  { name: 'Sign in', to: '/' },
+  { name: "Hardik's Profile", to: "/" },
+  { name: "Settings", to: "" },
+  { name: "Sign in", to: "/" },
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  
+
   const navigation = [
-    { name: 'Dashboard', to: '/', current: location.pathname === '/' },
-    { name: 'Education', to: '/education', current: location.pathname === '/education' },
-    { name: 'Projects', to: '/project', current: location.pathname === '/project' },
-    { name: 'Contact', to: '/contact', current: location.pathname === '/contact' },
+    { name: "Dashboard", to: "/", current: location.pathname === "/" },
+    {
+      name: "Education",
+      to: "/education",
+      current: location.pathname === "/education",
+    },
+    {
+      name: "Projects",
+      to: "/project",
+      current: location.pathname === "/project",
+    },
+    {
+      name: "Contact",
+      to: "/contact",
+      current: location.pathname === "/contact",
+    },
   ];
   return (
     <>
@@ -44,7 +55,11 @@ export default function Example() {
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <Link to="/">
-                    <img src="Images/logo.png" alt="Hardik Logo" className="h-8 w-22" />
+                        <img
+                          src="Images/logo.png"
+                          alt="Hardik Logo"
+                          className="h-8 w-22"
+                        />
                       </Link>
                     </div>
                     <div className="hidden md:block">
@@ -55,11 +70,11 @@ export default function Example() {
                             to={item.to}
                             className={classNames(
                               item.current
-                                ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'rounded-md px-3 py-2 text-sm font-medium'
+                                ? "bg-gray-900 text-white"
+                                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              "rounded-md px-3 py-2 text-sm font-medium"
                             )}
-                            aria-current={item.current ? 'page' : undefined}
+                            aria-current={item.current ? "page" : undefined}
                           >
                             {item.name}
                           </Link>
@@ -82,7 +97,11 @@ export default function Example() {
                         <div>
                           <Menu.Button className="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span className="sr-only">Open user menu</span>
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                            <img
+                              className="h-8 w-8 rounded-full"
+                              src={user.imageUrl}
+                              alt=""
+                            />
                           </Menu.Button>
                         </div>
                         <Transition
@@ -101,8 +120,8 @@ export default function Example() {
                                   <Link
                                     to={item.to}
                                     className={classNames(
-                                      active ? 'bg-gray-100' : '',
-                                      'block px-4 py-2 text-sm text-gray-700'
+                                      active ? "bg-gray-100" : "",
+                                      "block px-4 py-2 text-sm text-gray-700"
                                     )}
                                   >
                                     {item.name}
@@ -117,19 +136,32 @@ export default function Example() {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <Disclosure.Button
+                      className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      onClick={() => setIsOpen(!isOpen)}
+                    >
                       <span className="sr-only">Open main menu</span>
-                      {open ? (
-                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                      {isOpen ? (
+                        <XMarkIcon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
                       ) : (
-                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
                       )}
                     </Disclosure.Button>
                   </div>
                 </div>
               </div>
 
-              <Disclosure.Panel className="md:hidden">
+              <Disclosure.Panel
+                className={`md:hidden ${
+                  isOpen ? "max-h-screen" : "max-h-0"
+                } overflow-hidden transition-max-h duration-300 ease-in-out`}
+              >
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {navigation.map((item) => (
                     <Disclosure.Button
@@ -137,10 +169,12 @@ export default function Example() {
                       as={Link}
                       to={item.to}
                       className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'block rounded-md px-3 py-2 text-base font-medium'
+                        item.current
+                          ? "bg-gray-900 text-white"
+                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        "block rounded-md px-3 py-2 text-base font-medium"
                       )}
-                      aria-current={item.current ? 'page' : undefined}
+                      aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
                     </Disclosure.Button>
@@ -149,11 +183,19 @@ export default function Example() {
                 <div className="border-t border-gray-700 pb-3 pt-4">
                   <div className="flex items-center px-5">
                     <div className="flex-shrink-0">
-                      <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src={user.imageUrl}
+                        alt=""
+                      />
                     </div>
                     <div className="ml-3">
-                      <div className="text-base font-medium leading-none text-white">{user.name}</div>
-                      <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
+                      <div className="text-base font-medium leading-none text-white">
+                        {user.name}
+                      </div>
+                      <div className="text-sm font-medium leading-none text-gray-400">
+                        {user.email}
+                      </div>
                     </div>
                     <button
                       type="button"
