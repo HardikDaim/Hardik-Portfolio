@@ -103,7 +103,7 @@ export default function Home() {
 
   const cv = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1Rd7ngDle_78ZvCJGf3l9Ox8-k7_K5lbs/view?usp=share_link";
+      "https://drive.google.com/file/d/1DKdJ4ThNlYyzmW_3LvfafNtTPXxNbYFk/view?usp=share_link";
   };
 
   return (
