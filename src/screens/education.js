@@ -183,7 +183,7 @@ export default function Education() {
                   </h1>
                   <p id="time">
                     Presently doing <b>Data Structures and Algorithm</b> in Java
-                    and C++.
+                    and Python.
                   </p>
                   <ul className="competitive_icon flex justify-center">
                     <li className="inline ml-2">
@@ -205,12 +205,41 @@ export default function Education() {
             </div>
             <div className="certificate">
               <div className="row">
-                {/* Card 4 */}
-                <div className="col-lg-4 col-md-6 col-sm-12 ">
+                 {/* Card 5 */}
+                 <div className="col-lg-4 col-md-6 col-sm-12 ">
                   <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
                     <span class="absolute right-0 top-0 text-uppercase text-xs font-semibold bg-red-600 text-white py-1 px-4 bg-gradient-to-r from-red-500 via-purple-600 to-red-500 hover:bg-gradient-to-l rounded-none hover:from-red-500 hover:via-purple-600 hover:to-red-500 text-white py-2 px-4 rounded-md transition-all duration-300 ease-in-out ">
                       Latest
                     </span> 
+                    <img
+                      src="Images/certificate-5.png"
+                      className="card-img-top"
+                      alt="..."
+                      style={{ width: "870px", height: "350px" }}
+                    />
+                    <div className="card-text">
+                      <h5 className="card-title text-center font-semibold font-serif">
+                        Smart India Hackathon 2023 (Internal)
+                      </h5>
+                      <p className="card-text p-2 text-gray-400 text-right ">
+                        -by Ministry of Education
+                      </p>
+                      <div className="flex justify-center p-3">
+                        <a
+                          target="_blank"
+                          href="https://drive.google.com/file/d/1YHiek4cuQrio1IH2Z2edTtrXtJO5DMy8/view"
+                          className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center "
+                        >
+                          View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Card 4 */}
+                <div className="col-lg-4 col-md-6 col-sm-12 ">
+                  <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
+                   
                     <img
                       src="Images/certificate-4.jpeg"
                       className="card-img-top"

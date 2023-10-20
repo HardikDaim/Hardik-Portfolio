@@ -58,12 +58,64 @@ export default function Projects() {
 
           <div className="certificate">
             <div className="row">
-              {/* Card 2 */}
-              <div className="col-lg-4 col-md-6 col-sm-12 ">
+               {/* Card 4 */}
+               <div className="col-lg-4 col-md-6 col-sm-12 ">
                 <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
                   <span class="absolute right-0 top-0 text-uppercase text-xs font-semibold bg-red-600 text-white py-1 px-4 bg-gradient-to-r from-red-500 via-purple-600 to-red-500 hover:bg-gradient-to-l rounded-none hover:from-red-500 hover:via-purple-600 hover:to-red-500 text-white py-2 px-4 rounded-md transition-all duration-300 ease-in-out ">
                     Latest
                   </span>
+                  <img
+                    src="Images/project-4.png"
+                    className="card-img-top"
+                    alt="..."
+                    style={{ width: "870px", height: "250px" }}
+                  />
+                  <div className="card-text">
+                    <h5 className="card-title text-center font-semibold font-serif">
+                    KrishiMitra - Crop disease Detection WebApp                    </h5>
+                    <p className="card-text text-gray-500 text-right ">Technologies: MERN Stack, Tailwind CSS, Material UI</p>
+                    <div className="flex justify-center p-3">
+                      <a
+                        target="_blank"
+                        href="https://github.com/HardikDaim/Krishi-Mitra"
+                        className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center "
+                      >
+                        View Project
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               {/* Card 3 */}
+               <div className="col-lg-4 col-md-6 col-sm-12 ">
+                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
+                
+                  <img
+                    src="Images/project-3.jpeg"
+                    className="card-img-top"
+                    alt="..."
+                    style={{ width: "870px", height: "250px" }}
+                  />
+                  <div className="card-text">
+                    <h5 className="card-title text-center font-semibold font-serif">
+                    Blog WebApp                    </h5>
+                    <p className="card-text text-gray-500 text-right ">Technologies: MERN Stack, Tailwind CSS, Material UI</p>
+                    <div className="flex justify-center p-3">
+                      <a
+                        target="_blank"
+                        href="https://github.com/HardikDaim/Blog-App"
+                        className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center "
+                      >
+                        View Project
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card 2 */}
+              <div className="col-lg-4 col-md-6 col-sm-12 ">
+                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
+             
                   <img
                     src="Images/project-2.png"
                     className="card-img-top"
@@ -74,14 +126,14 @@ export default function Projects() {
                     <h5 className="card-title text-center font-semibold font-serif">
                       CurioChat-AI powered ChatApp
                     </h5>
-                    <p className="card-text text-gray-400 text-right "></p>
+                    <p className="card-text text-gray-500 text-right ">Technologies: Chatscope-Chat UI kit, Frontend Stuff </p>
                     <div className="flex justify-center p-3">
                       <a
                         target="_blank"
                         href="https://curiochat.netlify.app"
                         className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center "
                       >
-                        View project
+                        View Project
                       </a>
                     </div>
                   </div>
@@ -100,14 +152,14 @@ export default function Projects() {
                     <h5 className="card-title text-center font-semibold font-serif">
                       My first Portfolio Website
                     </h5>
-                    <p className="card-text text-gray-400 text-right "></p>
+                    <p className="card-text text-gray-500 text-right ">Technologies: React, Tailwind CSS, Lottice Animation  </p>
                     <div className="flex justify-center p-3">
                       <a
                         target="_blank"
                         href=""
                         className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center "
                       >
-                        View project
+                        View Project
                       </a>
                     </div>
                   </div>

@@ -117,18 +117,19 @@ export default function Home() {
           {showNotice && (
             <div className=" p-3 flex flex-col items-center sm:flex-row justify-between mx-auto max-w-7xl">
               <p className="text-white text-sm sm:text-lg font-semibold lg:px-6 mb-2 sm:mb-0 text-center sm:text-left">
-                🚀 Exciting News: Our New{" "}
-                <strong>AI Assistant-CurioChat App </strong>is Here! 🤖{" "}
-                <span></span>
+                🚀 Exciting News: My{" "}
+                <strong className="text-yellow-500">
+                  Projects & Certificate List{" "}
+                </strong>
+                is Updated Now! 🤖 <span></span>
               </p>
               <div className="flex items-center justify-end space-x-2">
-                <a
+                <Link
                   className="p-1 sm:px-2 text-xs sm:text-sm md:text-lg sm:mx-2 bg-[#fff] text-brand lg:text-lg font-rubik text-white bg-gray-800 font-semibold rounded-lg hover:bg-gray-700"
-                  target="_blank"
-                  href="https://curiochat.netlify.app"
+                  to="/project"
                 >
-                  Try Now
-                </a>
+                  Check Now
+                </Link>
                 <button onClick={handleCloseNotice} claaaName="ml-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -262,8 +263,8 @@ export default function Home() {
                       Landran, Mohali.
                     </p>
                     <p className=" pb-2" id="int-text">
-                      I am a <b>Software Engineer and a MERN Stack Developer</b>,
-                      consistently dedicated to expanding my skill set through
+                      I am a <b>Software Engineer and a MERN Stack Developer</b>
+                      , consistently dedicated to expanding my skill set through
                       continuous learning. I have prior experience managing a
                       YouTube channel and have edited over 400 videos for both
                       my own channel (which no longer exists) and freelance
@@ -274,8 +275,9 @@ export default function Home() {
                     </p>
 
                     <p className=" pb-4">
-                      If you would like to learn more about me, you can <b>download
-                      my resume (CV)</b> by clicking on the button below.
+                      If you would like to learn more about me, you can{" "}
+                      <b>download my resume (CV)</b> by clicking on the button
+                      below.
                     </p>
                     <div className="d-flex flow-row flex-wrap justify-center lg:justify-start">
                       <button
