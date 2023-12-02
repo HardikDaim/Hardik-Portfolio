@@ -13,9 +13,8 @@ const user = {
 };
 
 const userNavigation = [
-  { name: "Hardik's Profile", to: "/" },
-  { name: "Settings", to: "" },
-  { name: "Sign in", to: "/" },
+  { name: "Hardik's Profile", to: "https://www.linkedin.com/in/hardik-daim-ab0b07251/"},
+ 
 ];
 
 function classNames(...classes) {

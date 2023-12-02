@@ -102,9 +102,12 @@ export default function Home() {
   }, []);
 
   const cv = () => {
-    window.location.href =
-      "https://drive.google.com/file/d/1DKdJ4ThNlYyzmW_3LvfafNtTPXxNbYFk/view?usp=share_link";
+    window.open(
+      "https://drive.google.com/file/d/1eas60mNDwGKhRcwtYHcWAuxeD6NKpMuJ/view?usp=share_link",
+      "_blank"
+    );
   };
+  
 
   return (
     <div>
