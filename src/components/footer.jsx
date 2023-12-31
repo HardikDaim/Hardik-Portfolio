@@ -42,7 +42,7 @@ export default function Footer() {
                 <h5 className="widget-title font-bold">Quick Links</h5>
                 <ul className="list-unstyled footer-item">
                   <li className="footer-item">
-                    <a className="nav-link" href="https://drive.google.com/file/d/1eas60mNDwGKhRcwtYHcWAuxeD6NKpMuJ/view?usp=share_link" target='_blank'>
+                    <a className="nav-link" href="https://drive.google.com/file/d/1DF-eKN6no8TXkgU_wCVg2-yTpaUVrype/view?usp=share_link" target='_blank'>
                       View my Resume
                     </a>
                   </li>

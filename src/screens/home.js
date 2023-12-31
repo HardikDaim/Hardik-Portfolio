@@ -103,11 +103,10 @@ export default function Home() {
 
   const cv = () => {
     window.open(
-      "https://drive.google.com/file/d/1eas60mNDwGKhRcwtYHcWAuxeD6NKpMuJ/view?usp=share_link",
+      "https://drive.google.com/file/d/1DF-eKN6no8TXkgU_wCVg2-yTpaUVrype/view?usp=share_link",
       "_blank"
     );
   };
-  
 
   return (
     <div>
@@ -119,12 +118,13 @@ export default function Home() {
         <div className="bg-gradient-to-r from-blue-600 to-purple-600">
           {showNotice && (
             <div className=" p-3 flex flex-col items-center sm:flex-row justify-between mx-auto max-w-7xl">
-              <p className="text-white text-sm sm:text-lg font-semibold lg:px-6 mb-2 sm:mb-0 text-center sm:text-left">
-                🚀 Exciting News: My{" "}
-                <strong className="text-yellow-500">
+              <p className="text-white text-sm sm:text-lg font-semibold lg:px-6 mb-2 sm:mb-0 text-center sm:text-left animate-pulse">
+                🚀 <strong>Exciting News:</strong>
+                 Checkout my{" "}
+                <strong className="text-amber-500">
                   Projects & Certificate List{" "}
                 </strong>
-                is Updated Now! 🤖 <span></span>
+                 🤖 <span></span>
               </p>
               <div className="flex items-center justify-end space-x-2">
                 <Link
@@ -156,7 +156,7 @@ export default function Home() {
 
         {/* Content */}
         <header className="bg-white shadow">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  py-6">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  py-6 ">
             <h1
               className="text-3xl font-bold tracking-tight text-gray-900"
               onMouseEnter={handleMouseEnter}
@@ -178,7 +178,7 @@ export default function Home() {
                   </h1>
                   <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-2">
                     I'm{" "}
-                    <span className="text">
+                    <span className="text drop-shadow-xl">
                       {" "}
                       <span ref={textRef}></span>
                     </span>
@@ -259,22 +259,27 @@ export default function Home() {
                   </h2>
 
                   <div className="paragraph py-4">
-                    <p className=" pb-2 " id="int-text">
-                      I am a 19-year-old student currently residing in Panipat.
-                      I am pursuing a Bachelor's degree in Computer Science and
-                      Engineering, and I am currently in my second year at CGC
-                      Landran, Mohali.
+                    <p className="pb-2" id="int-text">
+                      Hey there! 👋 I'm a 19-year-old Computer Science and
+                      Engineering enthusiast based in Panipat. Currently rocking
+                      my second year at CGC Landran, Mohali.
                     </p>
-                    <p className=" pb-2" id="int-text">
-                      I am a <b>Software Engineer and a MERN Stack Developer</b>
-                      , consistently dedicated to expanding my skill set through
-                      continuous learning. I have prior experience managing a
-                      YouTube channel and have edited over 400 videos for both
-                      my own channel (which no longer exists) and freelance
-                      clients. I am highly proficient in video editing using
-                      DaVinci Resolve. Additionally, I possess basic photo
-                      editing skills and can work with tools such as Canva and
-                      PicsArt.
+                    <p className="pb-2" id="int-text">
+                      As a{" "}
+                      <b>
+                        passionate Software Engineer and adept MERN Stack
+                        Developer
+                      </b>
+                      , I thrive on continual learning and solving DSA problems. On the tech side, I'm your go-to person for MERN (MongoDB,
+                      Express.js, React, Node.js) magic. I love translating
+                      concepts into efficient, scalable code. And when I'm not
+                      immersed in coding, I wield tools like Canva
+                      for some creative flair. Let's connect the dots between
+                      pixels and code!
+                    </p>
+                    
+                    <p className="pb-2" id="int-text">
+                      🚀 <b>Skills</b>: Software Engineering, MERN Stack Development, Photo Editing (Canva).
                     </p>
 
                     <p className=" pb-4">
@@ -315,23 +320,16 @@ export default function Home() {
                 <div className="row services">
                   <div className="col-lg-3 col-md-6 col-sm-12">
                     <div
-                      className="service-card overflow-auto box-border bg-white text-center mb-8 hover:shadow-md hover:transition-all hover:duration-500 ease-in"
-                      style={{
-                        border: "5px solid rgba(0,0,0,0.07)",
-                        borderRadius: "20px",
-                        boxShadow: "0 0 25px rgba(0,0,0,0.07)",
-                        "-webkitTransition": "all 0.5s ease 0s",
-                        transition: "all 0.5s ease 0s;",
-                      }}
+                      className=" bg-white text-center mb-8 shadow-2xl rounded-2xl border-dashed border-4 hover:-translate-y-5 hover:scale-105 hover:duration-500 ease-in"
                     >
                       <div className="service-img-1 text-center py-4 text-5xl">
                         <Lottie options={options5} />
                       </div>
                       <div className="card-body text-center ">
-                        <h5 className="card-title text-uppercase font-roboto mb-5 text-black font-bold">
+                        <h5 className="card-title text-uppercase font-serif mb-3 text-black font-bold">
                           Web Development
                         </h5>
-                        <p className="card-para text-sm leading-6">
+                        <p className="card-para text-sm m-3 font-mono ">
                           I've started developing Websites with the keen
                           interest as this is the first ever Website I've made
                           to learn how to code and in future I'll try to make
@@ -342,84 +340,65 @@ export default function Home() {
                   </div>
                   <div className="col-lg-3 col-md-6 col-sm-12">
                     <div
-                      className="service-card overflow-auto box-border bg-white text-center mb-8 hover:shadow-md hover:transition-all hover:duration-500 ease-in"
-                      style={{
-                        border: "5px solid rgba(0,0,0,0.07)",
-                        borderRadius: "20px",
-                        boxShadow: "0 0 25px rgba(0,0,0,0.07)",
-                        "-webkitTransition": "all 0.5s ease 0s",
-                        transition: "all 0.5s ease 0s;",
-                      }}
+                      className=" bg-white text-center mb-8 rounded-2xl border-dashed border-4 shadow-2xl hover:-translate-y-5 hover:scale-105 hover:duration-500 ease-in"
+    
                     >
                       <div className="service-img-2 py-4 text-center py-4 text-5xl">
                         <Lottie options={options6} />
                       </div>
                       <div className="card-body text-center">
-                        <h5 className="card-title text-uppercase font-roboto  mb-5 text-black font-bold">
+                        <h5 className="card-title text-uppercase font-serif  mb-3 text-black font-bold">
                           Software Development
                         </h5>
-                        <p className="card-para text-sm leading-6">
+                        <p className="card-para text-sm font-mono m-3">
                           Presently I'm learning the Programming languages and
                           in some years I'll definitely make some Projects
                           related to this field and I'll definitely upload my
-                          every project I'll make at this Website.
+                          every project.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3 col-md-6 col-sm-12">
                     <div
-                      className="service-card overflow-auto box-border bg-white text-center mb-8 hover:shadow-md hover:transition-all hover:duration-500 ease-in"
-                      style={{
-                        border: "5px solid rgba(0,0,0,0.07)",
-                        borderRadius: "20px",
-                        boxShadow: "0 0 25px rgba(0,0,0,0.07)",
-                        "-webkitTransition": "all 0.5s ease 0s",
-                        transition: "all 0.5s ease 0s;",
-                      }}
+                      className="bg-white text-center mb-8 shadow-2xl rounded-2xl border-dashed border-4 hover:-translate-y-5 hover:scale-105  hover:duration-500 ease-in"
+                    
                     >
                       <div className="service-img-3 py-4 text-center py-4 text-5xl">
                         <Lottie options={options7} />
                       </div>
                       <div className="card-body text-center">
-                        <h5 className="card-title text-uppercase font-roboto  mb-5 text-black font-bold">
+                        <h5 className="card-title text-uppercase font-serif  mb-3 text-black font-bold">
                           Android Development
                         </h5>
-                        <p className="card-para text-sm leading-6">
+                        <p className="card-para text-sm font-mono m-3">
                           Presently I'm learning the Programming languages and
                           in some years I'll definitely make some Projects
                           related to this field and I'll definitely upload my
-                          every project I'll make at this Website.
+                          every project.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3 col-md-6 col-sm-12">
                     <div
-                      className="service-card overflow-auto box-border bg-white text-center mb-8 hover:shadow-md hover:transition-all hover:duration-500 ease-in"
-                      style={{
-                        border: "5px solid rgba(0,0,0,0.07)",
-                        borderRadius: "20px",
-                        boxShadow: "0 0 25px rgba(0,0,0,0.07)",
-                        "-webkitTransition": "all 0.5s ease 0s",
-                        transition: "all 0.5s ease 0s;",
-                      }}
+                      className="bg-white text-center mb-8 shadow-2xl rounded-2xl border-dashed border-4 hover:-translate-4  hover:scale-105 hover:duration-500 ease-in"
                     >
                       <div className="service-img-4 py-4 text-center py-4 text-5xl">
                         <Lottie options={options8} />
                       </div>
                       <div className="card-body text-center">
                         <h5
-                          className="card-title text-uppercase font-roboto  mb-5 text-black font-bold"
+                          className="card-title text-uppercase font-serif  mb-3 text-black font-bold"
                           id="yeah"
                         >
                           Game Development
                         </h5>
-                        <p className="card-para text-sm leading-6 font-serif">
+                        <p className="card-para text-sm m-3 font-mono">
                           Presently I'm learning the Programming languages and
                           in some years I'll definitely make some Projects
                           related to this field and I'll definitely upload my
-                          every project I'll make at this Website.
+                          every project.
                         </p>
                       </div>
                     </div>

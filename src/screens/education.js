@@ -83,7 +83,7 @@ export default function Education() {
               <div className="timeline">
                 <div className="timeline-month">Education</div>
                 <div className="timeline-section">
-                  <div className="timeline-date">2023 - Presently doing</div>
+                  <div className="timeline-date">2022 - Presently doing</div>
                   <div className="row">
                     <div className="col-lg">
                       <div className="timeline-box">
@@ -109,8 +109,12 @@ export default function Education() {
                             Website
                           </a>
                           <div className="box-item">
-                            💥 I have studied basic software engineering
-                            subjects like DS, Algorithms, DBMS, OS, CA,CN etc.
+                            💥 I've studied programming languages, algorithms,
+                            data structures, artificial intelligence, machine
+                            learning, web development, databases, cybersecurity,
+                            and gained practical experience through projects,
+                            internships, and a capstone project, preparing me
+                            for diverse roles in technology.
                           </div>
                           <div className="box-item">
                             <b>💥 SGPA</b>: 8.00/10 (2nd Sem){" "}
@@ -173,7 +177,6 @@ export default function Education() {
                   <li className="inline ml-2">
                     <Lottie options={options2} height={100} />
                   </li>
-                  
                 </ul>
 
                 <hr></hr>
@@ -182,14 +185,13 @@ export default function Education() {
                     Learning Data Structures & Algorithms
                   </h1>
                   <p id="time">
-                    Presently doing <b>Data Structures and Algorithm</b> in Java
-                    and Python.
+                    Presently doing <b>Data Structures and Algorithm</b> in
+                    Java.
                   </p>
                   <ul className="competitive_icon flex justify-center">
                     <li className="inline ml-2">
                       <Lottie options={options4} height={100} />
                     </li>
-                    
                   </ul>
                 </div>
               </div>
@@ -205,12 +207,12 @@ export default function Education() {
             </div>
             <div className="certificate">
               <div className="row">
-                 {/* Card 6 */}
-                 <div className="col-lg-4 col-md-6 col-sm-12 ">
+                {/* Card 6 */}
+                <div className="col-lg-4 col-md-6 col-sm-12 ">
                   <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
-                    <span class="absolute right-0 top-0 text-uppercase text-xs font-semibold bg-red-600 text-white py-1 px-4 bg-gradient-to-r from-red-500 via-purple-600 to-red-500 hover:bg-gradient-to-l rounded-none hover:from-red-500 hover:via-purple-600 hover:to-red-500 text-white py-2 px-4 rounded-md transition-all duration-300 ease-in-out ">
+                    <span class="absolute animate-pulse right-0 top-0 text-uppercase text-xs font-semibold bg-red-600 text-white py-1 px-4 bg-gradient-to-r from-red-500 via-purple-600 to-red-500 hover:bg-gradient-to-l rounded-none hover:from-red-500 hover:via-purple-600 hover:to-red-500 text-white py-2 px-4 rounded-md transition-all duration-300 ease-in-out ">
                       Latest
-                    </span> 
+                    </span>
                     <img
                       src="Images/certificate-6.png"
                       className="card-img-top"
@@ -219,7 +221,7 @@ export default function Education() {
                     />
                     <div className="card-text">
                       <h5 className="card-title text-center font-semibold font-serif">
-                      The Wise Quacks - 2K23
+                        The Wise Quacks - 2K23
                       </h5>
                       <p className="card-text p-2 text-gray-400 text-right ">
                         -by TPP Department (CGC)
@@ -236,10 +238,9 @@ export default function Education() {
                     </div>
                   </div>
                 </div>
-                 {/* Card 5 */}
-                 <div className="col-lg-4 col-md-6 col-sm-12 ">
+                {/* Card 5 */}
+                <div className="col-lg-4 col-md-6 col-sm-12 ">
                   <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
-        
                     <img
                       src="Images/certificate-5.png"
                       className="card-img-top"
@@ -268,7 +269,6 @@ export default function Education() {
                 {/* Card 4 */}
                 <div className="col-lg-4 col-md-6 col-sm-12 ">
                   <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
-                   
                     <img
                       src="Images/certificate-4.jpeg"
                       className="card-img-top"

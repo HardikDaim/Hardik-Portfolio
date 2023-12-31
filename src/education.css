@@ -98,8 +98,14 @@
     left: 11px;
     border: 1px solid #17191B;
     border-radius: 100%;
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
-  
+  @keyframes ping {
+    75%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
   
   
   .timeline-box {

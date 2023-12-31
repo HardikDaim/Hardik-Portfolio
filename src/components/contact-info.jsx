@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div>
       <div
-        className="dc-dynamic-chicklet"
+        className="dc-dynamic-chicklet animate-bounce"
         style={{
           zIndex: 108000,
           position: "fixed",
