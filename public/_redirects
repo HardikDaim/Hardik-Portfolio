@@ -1,13 +1,14 @@
 # Redirect from the root path to the home page
-/ /index.html 200
+/* /index.html 200
 
 # Redirect for the /education route
-/education /education/index.html 200
+/education/* /education/index.html 200
 
 # Redirect for the /project route
-/project /project/index.html 200
+/projects/* /projects/index.html 200
 
 # Redirect for the /contact route
-/contact /contact/index.html 200
+/contact/* /contact/index.html 200
 
-
+# Redirect for the /contact route
+/feedback/* /feedback/index.html 200

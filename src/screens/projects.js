@@ -6,9 +6,7 @@ import Contact from "../components/contact-info";
 import Lottie from "react-lottie";
 import FirstAnimation from "../animations/anim-5.json";
 export default function Projects() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+
 
   const options1 = {
     loop: true,

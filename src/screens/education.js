@@ -12,9 +12,7 @@ import FourthAnimation from "../animations/anim-8.json";
 import FifthAnimation from "../animations/anim-9.json";
 
 export default function Education() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ 
   const options1 = {
     loop: true,
     autoplay: true,

@@ -23,9 +23,7 @@ export default function Home() {
     setShowNotice(false);
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ 
   const options1 = {
     loop: true,
     autoplay: true,
@@ -128,8 +126,8 @@ export default function Home() {
               </p>
               <div className="flex items-center justify-end space-x-2">
                 <Link
-                  className="p-1 sm:px-2 text-xs sm:text-sm md:text-lg sm:mx-2 bg-[#fff] text-brand lg:text-lg font-rubik text-white bg-gray-800 font-semibold rounded-lg hover:bg-gray-700"
-                  to="/project"
+                  className="p-2 sm:px-2 text-xs sm:text-sm md:text-lg sm:mx-2 bg-[#fff] text-brand lg:text-lg font-rubik text-white bg-gray-800 font-semibold rounded-lg hover:bg-gray-700"
+                  to="/projects"
                 >
                   Check Now
                 </Link>
@@ -440,7 +438,7 @@ export default function Home() {
                     </p>
                     <div className="d-flex flow-row flex-wrap justify-center lg:justify-start items-center text-center m-auto">
                       <Link
-                        to="/project"
+                        to="/projects"
                         type="button"
                         className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center"
                       >

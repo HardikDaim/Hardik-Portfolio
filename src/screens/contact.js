@@ -8,9 +8,7 @@ function handleClick() {
 }
 
 export default function Contact() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ 
   const [showHash, setShowHash] = useState(false);
 
   const handleMouseEnter = () => {

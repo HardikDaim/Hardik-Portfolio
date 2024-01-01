@@ -75,7 +75,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li className="footer-item">
-                    <Link className="nav-link" to="/project">
+                    <Link className="nav-link" to="/projects">
                       Projects
                     </Link>{' '}
                    

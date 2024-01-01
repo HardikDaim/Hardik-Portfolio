@@ -34,8 +34,8 @@ export default function Example() {
     },
     {
       name: "Projects",
-      to: "/project",
-      current: location.pathname === "/project",
+      to: "/projects",
+      current: location.pathname === "/projects",
     },
     {
       name: "Contact",
