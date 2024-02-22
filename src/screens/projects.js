@@ -56,12 +56,44 @@ export default function Projects() {
 
           <div className="certificate">
             <div className="row">
-              {/* Card 6 */}
+              {/* Card 7 */}
               <div className="col-lg-4 col-md-6 col-sm-12 ">
-                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
-                  <span class="absolute animate-pulse right-0 top-0 text-uppercase text-xs font-semibold bg-red-600 text-white py-1 px-4 bg-gradient-to-r from-red-500 via-purple-600 to-red-500 hover:bg-gradient-to-l rounded-none hover:from-red-500 hover:via-purple-600 hover:to-red-500 text-white py-2 px-4 rounded-md transition-all duration-300 ease-in-out ">
+                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4 rounded-2xl">
+                  <span class="absolute animate-pulse right-0 top-0 text-uppercase text-xs font-bold bg-red-600 text-white py-1 px-4 bg-gradient-to-r from-pink-500 via-indigo-600 to-sky-500 hover:bg-gradient-to-l rounded-none hover:from-red-500 hover:via-purple-600 hover:to-red-500 text-white py-2 px-4 rounded-2xl transition-all duration-300 ease-in-out ">
                     Latest
                   </span>
+                  <img
+                    src="Images/project-7.png"
+                    className="card-img-top"
+                    alt="..."
+                    style={{ width: "870px", height: "250px" }}
+                  />
+                  <div className="card-text">
+                    <h5 className="card-title text-center font-semibold font-serif">
+                    Connectify-Social Media WebApp                   </h5>
+                    <p className="card-text text-gray-500 text-right mr-2 ">Technology: MERN STACK</p>
+                    <div className="flex flex-row justify-center gap-x-5 p-3">
+                      <a
+                        target="_blank"
+                        href="https://github.com/HardikDaim/SocialMedia-Frontend"
+                        className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center "
+                      >
+                        View Frontend
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://github.com/HardikDaim/SocialMedia-Backend"
+                        className="rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-gray-800 text-white hover:bg-slate-700 inline-flex items-center "
+                      >
+                        View Backend
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card 6 */}
+              <div className="col-lg-4 col-md-6 col-sm-12 ">
+                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4 rounded-2xl">
                   <img
                     src="Images/project-6.png"
                     className="card-img-top"
@@ -86,7 +118,7 @@ export default function Projects() {
               </div>
                {/* Card 5 */}
                <div className="col-lg-4 col-md-6 col-sm-12 ">
-                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
+                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4 rounded-2xl">
                   <img
                     src="Images/project-5.png"
                     className="card-img-top"
@@ -111,7 +143,7 @@ export default function Projects() {
               </div>
                {/* Card 4 */}
                <div className="col-lg-4 col-md-6 col-sm-12 ">
-                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
+                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4 rounded-2xl">
                   <img
                     src="Images/project-4.png"
                     className="card-img-top"
@@ -136,7 +168,7 @@ export default function Projects() {
               </div>
                {/* Card 3 */}
                <div className="col-lg-4 col-md-6 col-sm-12 ">
-                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
+                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4 rounded-2xl">
                 
                   <img
                     src="Images/project-3.jpeg"
@@ -162,7 +194,7 @@ export default function Projects() {
               </div>
               {/* Card 2 */}
               <div className="col-lg-4 col-md-6 col-sm-12 ">
-                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4">
+                <div className="relative shadow hover:shadow-lg mb-8 lg:mb-4 rounded-2xl">
              
                   <img
                     src="Images/project-2.png"
@@ -189,7 +221,7 @@ export default function Projects() {
               </div>
               {/* Card 1 */}
               <div className="col-lg-4 col-md-6 col-sm-12 ">
-                <div className=" shadow hover:shadow-lg mb-8 lg:mb-4">
+                <div className=" shadow hover:shadow-lg mb-8 lg:mb-4 rounded-2xl">
                   <img
                     src="Images/project-1.png"
                     className="card-img-top"

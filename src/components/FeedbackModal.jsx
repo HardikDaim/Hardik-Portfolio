@@ -16,6 +16,7 @@ export default function FeedbackModal({ onClose, onClick }) {
               height="25"
               src="https://img.icons8.com/ios-filled/50/000000/delete-sign--v1.png"
               alt="delete-sign--v1"
+              className="text-gray-500"
             />
           </div>
           <h2 className="text-2xl font-bold mb-4 flex items-center justify-center">
@@ -27,7 +28,7 @@ export default function FeedbackModal({ onClose, onClick }) {
           </p>
           <div onClick={onClick} className="flex justify-center">
             <Link to="/feedback">
-              <button className="transition ease-in-out duration-500 bg-purple-600 hover:bg-blue-900 hover:-translate-y-1 text-white px-4 py-2 rounded">
+              <button className="transition ease-in-out duration-500 bg-gradient-to-r from-pink-500 via-indigo-700 to-sky-600 hover:bg-blue-900 hover:-translate-y-1 text-white font-bold px-4 py-2 rounded">
                 Send Feedback
               </button>
             </Link>

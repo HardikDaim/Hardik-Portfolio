@@ -16,6 +16,7 @@ import anim3 from "../animations/app.json";
 import anim4 from "../animations/game.json";
 import Typed from "typed.js";
 
+
 export default function Home() {
   const [showNotice, setShowNotice] = useState(true);
 
@@ -101,7 +102,7 @@ export default function Home() {
 
   const cv = () => {
     window.open(
-      "https://drive.google.com/file/d/1DF-eKN6no8TXkgU_wCVg2-yTpaUVrype/view?usp=share_link",
+      "https://drive.google.com/file/d/1VVmHfw1wiQnH8TZHoDlAclnFljvltSbY/view?usp=share_link",
       "_blank"
     );
   };
@@ -112,46 +113,6 @@ export default function Home() {
       <SocialIcons />
       <Contact />
       <>
-        {/* Notice */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600">
-          {showNotice && (
-            <div className=" p-3 flex flex-col items-center sm:flex-row justify-between mx-auto max-w-7xl">
-              <p className="text-white text-sm sm:text-lg font-semibold lg:px-6 mb-2 sm:mb-0 text-center sm:text-left animate-pulse">
-                🚀 <strong>Exciting News:</strong>
-                 Checkout my{" "}
-                <strong className="text-amber-500">
-                  Projects & Certificate List{" "}
-                </strong>
-                 🤖 <span></span>
-              </p>
-              <div className="flex items-center justify-end space-x-2">
-                <Link
-                  className="p-2 sm:px-2 text-xs sm:text-sm md:text-lg sm:mx-2 bg-[#fff] text-brand lg:text-lg font-rubik text-white bg-gray-800 font-semibold rounded-lg hover:bg-gray-700"
-                  to="/projects"
-                >
-                  Check Now
-                </Link>
-                <button onClick={handleCloseNotice} claaaName="ml-auto">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 sm:h-6 sm:w-6 text-white ml-auto hover:text-white-600 cursor-pointer"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
-
         {/* Content */}
         <header className="bg-white shadow">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  py-6 ">
@@ -176,7 +137,7 @@ export default function Home() {
                   </h1>
                   <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-2">
                     I'm{" "}
-                    <span className="text drop-shadow-xl">
+                    <span className="text ">
                       {" "}
                       <span ref={textRef}></span>
                     </span>

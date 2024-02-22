@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import SocialIcons from "../components/socialIcons";
@@ -8,7 +8,6 @@ function handleClick() {
 }
 
 export default function Contact() {
- 
   const [showHash, setShowHash] = useState(false);
 
   const handleMouseEnter = () => {
@@ -26,14 +25,14 @@ export default function Contact() {
 
       <header className="bg-white shadow">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <h1
-              className="text-3xl font-bold tracking-tight text-gray-900"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-               {showHash ? '#' : ''}  Contact
-              <hr></hr>
-            </h1>
+          <h1
+            className="text-3xl font-bold tracking-tight text-gray-900"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            {showHash ? "#" : ""} Contact
+            <hr></hr>
+          </h1>
         </div>
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <div className="col-lg-12 text-center pt-3">
@@ -53,21 +52,23 @@ export default function Contact() {
                 </span>
               </h2>
               <div className="pb-4">
-              <p>
-                If you have any Question regarding <b>Business</b>, Hiring or
-                any other Doubt/Query, Please feel free to ask me via any of the
-                social Links/Buttons given below.
-                <p> You can also chat with me
-                through <b>WhatsApp</b> by clicking on the WhatsApp button. You
-                can also chat with me via instagram or any other platform you
-                would like.</p>
-              </p>
-              <p>
-                Always feel free to call me related to <b>Hiring</b>.
-              </p>
-              <p>
-                Made with ❤️ by <b>Hardik.</b>
-              </p>
+                <p>
+                  If you have any Question regarding <b>Business</b>, Hiring or
+                  any other Doubt/Query, Please feel free to ask me via any of
+                  the social Links/Buttons given below.
+                  <p>
+                    {" "}
+                    You can also chat with me through <b>WhatsApp</b> by
+                    clicking on the WhatsApp button. You can also chat with me
+                    via instagram or any other platform you would like.
+                  </p>
+                </p>
+                <p>
+                  Always feel free to call me related to <b>Hiring</b>.
+                </p>
+                <p>
+                  Made with ❤️ by <b>Hardik.</b>
+                </p>
               </div>
               <div className="social-icon pb-4">
                 <a href="https://github.com/HardikDaim" target="_blank">
@@ -102,7 +103,7 @@ export default function Contact() {
               </p>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 content">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 pb-4">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 ">
                 Call Me
                 <br />
                 <span className="text-2xl font-semibold tracking-tight text-gray-900 pb-4">
@@ -110,26 +111,24 @@ export default function Contact() {
                 </span>
               </h2>
               <p className="phone pb-4">
-                <i className="fa-solid fa-phone" style={{ color: "#8000ca" }} />
-                <span>
+             
+                <div className="mt-2 ml-1 font-semibold underline text-blue-700">
                   {" "}
                   <a
                     href="tel:+91-9518213371"
-                    style={{ textDecoration: "none", color: "black" }}
+                  
                   >
-                    +91-95182-13371
+                    PH: +91-95182-13371
                   </a>
-                </span>
+                </div>
               </p>
               <hr />
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 pb-4">
-                <span className="pb-4">
-                Chat Now
-                    </span>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-6 md:mt-0">
+                <span className="">Chat Now</span>
                 <br />
-                <span className="text-2xl font-semibold tracking-tight text-gray-900 pb-4">
+                <div className="text-2xl font-semibold tracking-tight text-gray-900 py-2 ">
                   Chat with me for any Query or Business Purpose
-                </span>
+                </div>
               </h2>
               <div className="mt-10 flex gap-4">
                 <button
